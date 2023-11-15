@@ -1,0 +1,94 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar 
+{
+    display: none;
+}
+
+body 
+{
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(to bottom right, #a2d5f2, #9d8cc1);
+}
+
+main 
+{
+    margin-top: 12%;
+}
+
+.fixed-navbar 
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(to bottom right, #a2d5f2, #a2d5f2);
+    transition: 1s;
+    z-index: 1000;
+}
+
+.header 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 3%;
+}
+
+.header .big-letter
+{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+    line-height: 1; 
+}
+
+.big-letter::before
+{
+    content: "ream";
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 35px;
+    left: 80px;
+}
+
+.big-letter::after
+{
+    content: "ictionary";
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 28px;
+    left: 80px;
+}
+
+.back 
+{
+    cursor: pointer;
+}
+
+.card:hover 
+{
+    background-color: #b5aec2; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px 12px rgba(0, 0, 0, 0.1); 
+}
+
+@media screen and (max-width: 768px) {
+    main 
+    {
+        margin-top: 30%;
+    }
+}
